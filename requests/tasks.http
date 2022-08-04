@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=5&page=0&title=javascript
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en javascript",
+    "description": "Trabajo en empresa"
+}
+
+###
+GET http://localhost:3000/api/tasks/6286d81c1a4256a4efaadde4
+
+###
+DELETE http://localhost:3000/api/tasks/6286dac8c20cfa0af07a6e33
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/6286d81c1a4256a4efaadde4
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio en Angular JS"
+}
